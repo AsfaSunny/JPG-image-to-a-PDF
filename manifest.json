@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "CoffeePdf Extension",
+  "version": "1.0",
+  "description": "A simple Chrome extension that converts PDFs using Smallpdf API",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
+

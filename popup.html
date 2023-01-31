@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      body {
+        padding: 20px;
+        font-family: sans-serif;
+        text-align: center;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>Coffeepdf Extension</h2>
+    <p>Convert PDFs using Smallpdf API</p>
+    <button id="convert-pdf">Convert PDF</button>
+  </body>
+
+
+  <script>
+    document.getElementById("convert-pdf").addEventListener("click", function() {
+      chrome.tabs.create({
+        url: "https://smallpdf.com/pdf-converter"
+      });
+    });
+
+  </script>
+</html>
